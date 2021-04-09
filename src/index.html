@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastly</title>
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+
+  <div class="perspective-container">
+    <div class="container">
+
+      <div class="pokemon-container">
+        <div class="eyes-container">
+          <div class="left eye-container">
+            <div class="eye-shadow"></div>
+          </div>
+          <div class="right eye-container">
+            <div class="eye-shadow"></div>
+          </div>
+        </div>
+        <div class="brows-container">
+          <div class="left brow"></div>
+          <div class="right brow"></div>
+        </div>
+        <div class="gastly-container">
+          <div class="gastly">
+            <div class="gastly-shadow">
+              <div class="mouth-container">
+                <div class="mouth"></div>
+              </div>
+              <div class="fangs-container">
+                <div class="left fang"></div>
+                <div class="right fang"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="gastly-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55">
+        <defs>
+          <linearGradient id="grandient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#c2afcd" />
+            <stop offset="50%" stop-color="#c2afcd" />
+            <stop offset="50%" stop-color="#71616e" />
+            <stop offset="100%" stop-color="#71616e" />
+          </linearGradient>
+          <clipPath id="clip">
+            <use xlink:href="#inner-shape" />
+          </clipPath>
+        </defs>
+        <g id="shape-group">
+          <path id="inner-shape" d=" M38.1 52.4v-4.8l2.6-2.2 1.1 1.2 1.7-1.8v-2.7h3.3v-1.4h2l1.5-3.5-1.4-1.3v-2.7l2-1.3v-2.3h-2.4l-.8
+          2h-1l-1.1-1.7v-2.7l1.2-1v-1.9l3-2.9-2.3-3.8h-1.8V16h3.2V13l-2.2-1.9-1.1.6-1-1-2.1 1.5v2.2l1 1v1.3l-1.2 1.2-3-3
+          1.4-3.2-3.4-3.4h-4l-.7 2-3 1.7-3.2-1.6V8l3.2-1.5V3.6l-2.5-2.1h-4.7l-2.2 2v2l-4.3 2.3v3h-4.6l-2.3
+          5H6.7v4.5h3v3.2H7.9l-1.8 3v2.8h2.3v2.5h-3l-1 3.8 3.3 5.7h3.6l1.4 2.3-1.3.8 1.3 3.5H17v3.7h4.9l3.3-3h3.5l1
+          2.3h3l1.5 1.6z" />
+          <path d="M5.4 11.2h1.8v2H5.4zM7.9 7.4h2.2v2.4H7.9zM52.3 30.5h3.1v3.4h-3.1zM40.3 50.1h2.8v3h-2.8z" />
+          <path d="M32 1.5h1.7l1.2 1.1h1.8l1.4-1.4 1.6 1.4L38 4.4h-1.6l-1 1.1h-1.1l-2.3-2.2z" />
+        </g>
+        <g clip-path="url(#clip)">
+          <use class="shape-2" xlink:href="#inner-shape" />
+        </g>
+      </svg>
+
+    </div>
+  </div>
+
+  <div class="background">
+    <div class="polygon"></div>
+    <div class="triangle triangle-1"></div>
+    <div class="triangle triangle-2"></div>
+    <div class="triangle triangle-3"></div>
+    <div class="triangle triangle-4"></div>
+  </div>
+
+</body>
+
+</html>
